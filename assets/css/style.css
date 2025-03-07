@@ -45,13 +45,24 @@ body {
   flex: 0 0 0px;
 }
 
-.col .col-large {
+.col.col-large {
+  min-height: 50vh;
+  flex-grow: 1;
+  background-color: #208b21;
 }
 
-.col .col-small {
+.col.col-small {
+  min-width: 35%;
+  min-height: 50vh;
+  background-color: #add8e7;
 }
 
-.col .col-internal {
+.col.col-single {
+  flex-basis: 100%;
+  min-height: 50vh;
+}
+
+.col.col-internal {
 }
 
 /* TIPOGRAFIA */
@@ -190,6 +201,15 @@ header .container {
 /* MAIN */
 main {
   flex-grow: 1;
+}
+
+section {
+  width: 100%;
+  padding: 50px 0;
+}
+
+.container.container-reverse {
+  flex-direction: row-reverse;
 }
 
 /* FOOTER */
